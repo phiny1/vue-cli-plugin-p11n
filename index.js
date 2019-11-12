@@ -5,7 +5,8 @@ module.exports = (api, options) => {
 
   const commands = ['build', 'demo', 'docs']
   commands.forEach(command => {
-    const target = require(`./lib/${command}/command`)(api)
+    const p11nOptions = options && options.pluginOptions && options.pluginOptions.p11n || {}
+    const target = require(`./lib/${command}/command`)(api, p11nOptions)
     api.registerCommand(command, target.opts, target.fn)
   })
 }
