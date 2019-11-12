@@ -17,6 +17,7 @@
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-replace": "^2.1.0",
     "rollup-plugin-typescript2": "^0.19.2",
     "rollup-plugin-vue": "^4.7.2",
